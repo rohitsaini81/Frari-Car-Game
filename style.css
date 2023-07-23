@@ -1,0 +1,93 @@
+*{margin:0;
+padding: 0;}
+body{
+    overflow: hidden;
+    background-image:url(components/bg.jpg);
+}
+
+
+.btn{
+    height: 100px;
+    width: 200px;
+    background-color: #02010262;
+    color: white;
+}
+
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.wheel img{
+    height:50px;
+    width:50px;
+    animation: wheelrotate linear .10s infinite;
+    
+}
+#carbody{
+    height: 120px;
+    width: 350px;
+
+}
+.bodycar{  
+display: flex;
+translate: 3px ;
+}
+.wheel{
+    position: absolute;
+    top: 50px;
+}
+.wheel1{
+    left: 55px;
+
+}
+    .wheel2{
+        left: 225px;
+    
+    }
+.car{
+    position: relative;
+    top: 400px;
+    animation: carmove linear 10s infinite;
+}
+
+@keyframes wheelrotate{
+    100%{
+        transform:rotate(360deg);
+        
+        
+    }
+}
+
+@keyframes carmove {
+    100%{
+        transform: translateX(500vh);
+    }
+    
+}
+@keyframes rockdown {
+    100%{
+        transform: translatey(500px);
+    }
+    
+}
+.r1{
+    position: relative;
+    bottom: 50px;
+}
+.rocks{
+    margin-left: auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 30%;
+    background-color: burlywood;
+    animation: rockdown linear 10s infinite;
+}
+.problems{
+    display: flex;
+
+}
+.r1{
+    top: 20px;
+}
